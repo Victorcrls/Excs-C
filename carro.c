@@ -5,12 +5,20 @@ int main(void)
 {
 	setlocale(LC_ALL, "");
 	int kmi,kmf,litros;
-	float kmi, kmf, litros;
+	float valor;
 	printf("Diz os kms iniciais");
-	scanf_s("%f", &kmi); 
+	scanf_s("%d", &kmi); 
 	printf("diz os kms finais ");
-	fscanf_s("%f", &kmf);
+	scanf_s("%d", &kmf);
 	printf("diz a quantidade litros de gasolina que foram gastos aos 100km");
-	scanf_s("%f", &litros);
-	return 0;
+	scanf_s("d%", &litros);
+	valor=litros*100/(kmf-kmi);
+		if (valor>5)
+		{
+			printf("És rico");
+				}
+	else
+		{
+			printf("Escolheste bem esse Toyota");
+			reurn 0;
 }
