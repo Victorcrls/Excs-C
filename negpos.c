@@ -4,15 +4,18 @@ int main(void)
 {
 	setlocale(LC_ALL, "");
 	int n;
-	printf("Diz um numero:\n");
-	scanf_s("%i", &n);
-	if (n < 0)
+	do
 	{
-		printf("o numero é negativo\n");
-	}
-	else if (n > 0)
-	{
-		printf("o numero é positivo");
-	}
+		printf("Diz um numero:\n");
+		scanf_s("%i", &n);
+		if (n < 0)
+		{
+			printf("o numero Ã© negativo\n");
+		}
+		else if (n > 0)
+		{
+		printf("o numero Ã© positivo");
+	}while(num==0);
+		printf("Vou me embora porque pressionaste 0\n");
 	return 0;
 }
