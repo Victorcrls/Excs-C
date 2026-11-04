@@ -16,4 +16,6 @@ int main()
 		else
 			printf(",maior");
 	} while (num != n);
+printf("Usaste %d tentativas\n\n", contador);
+return 0;
 }
