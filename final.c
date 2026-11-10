@@ -1,12 +1,11 @@
 #include <stdio.h>
-int main()
-{
+
+int main() {
     int numero;
-    printf("Digite um numero: ");
+    printf("põe um num: ");
     scanf_s("%d", &numero);
-    while (numero >= 0) {
-        printf("%d\n", numero);
-        numero--;
+    for (int i = numero; i >= 0; i--) {
+        printf("%d\n", i);
     }
     return 0;
 }
