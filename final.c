@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int numero;
     printf("põe um num: ");
     scanf_s("%d", &numero);
