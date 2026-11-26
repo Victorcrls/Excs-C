@@ -15,8 +15,8 @@ int main(void)
 	}
 	for (i = 0; i <= 29; i++)
 	{
-		if (idade[i] > 13 && altura[i] < soma / 30)
-	
+		if (idade[i] > 13 && altura[i] < soma / 30);
+	}
 	printf("%d os alunos têm altura inferior a media é %d", soma, media);
 
 	return 0;
